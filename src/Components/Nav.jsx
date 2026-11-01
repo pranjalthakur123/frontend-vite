@@ -54,13 +54,13 @@ function Navbar() {
       try {
        // Get a CSRF token from Django
        const csrfResponse = await fetch(
-     "http://localhost:8000/api/auth/csrf/",
-      {
-        method: "GET",
-        credentials: "include",
-        cache: "no-store",
-      }
-     );
+  "https://django-backend-6-xahr.onrender.com/api/auth/csrf/",
+  {
+    method: "GET",
+    credentials: "include",
+    cache: "no-store",
+  }
+);
 
      if (!csrfResponse.ok) {
       throw new Error("Could not get security token.");
@@ -69,16 +69,16 @@ function Navbar() {
      const csrfData = await csrfResponse.json();
 
        // End the Django session
-     const response = await fetch(
-      "http://localhost:8000/api/auth/logout/",
-      {
-        method: "POST",
-        credentials: "include",
-        headers: {
-          "X-CSRFToken": csrfData.csrfToken,
-        },
-      }
-    );
+    const response = await fetch(
+  "https://django-backend-6-xahr.onrender.com/api/auth/logout/",
+  {
+    method: "POST",
+    credentials: "include",
+    headers: {
+      "X-CSRFToken": csrfData.csrfToken,
+    },
+  }
+);
 
     if (!response.ok) {
       throw new Error("Logout failed. Please try again.");

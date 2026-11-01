@@ -25,8 +25,10 @@ import {
 
 import "./Settings.css";
 
-const SETTINGS_API = "http://localhost:8000/api/settings/";
-const PROFILE_API = "http://localhost:8000/api/auth/profile/";
+const BASE_URL = "https://django-backend-6-xahr.onrender.com";
+
+const SETTINGS_API = `${BASE_URL}/api/settings/`;
+const PROFILE_API = `${BASE_URL}/api/auth/profile/`;
 
 const THEME_KEY = "edumanageTheme";
 

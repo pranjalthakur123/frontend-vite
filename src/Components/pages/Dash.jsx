@@ -35,11 +35,13 @@ import {
   Cell,
 } from "recharts";
 
+const BASE_URL = "https://django-backend-6-xahr.onrender.com";
+
 const API = {
-  students: "http://localhost:8000/api/students/",
-  accounts: "http://localhost:8000/api/fees/accounts/",
-  payments: "http://localhost:8000/api/fees/payments/",
-  attendance: "http://localhost:8000/api/attendance/",
+  students: `${BASE_URL}/api/students/`,
+  accounts: `${BASE_URL}/api/fees/accounts/`,
+  payments: `${BASE_URL}/api/fees/payments/`,
+  attendance: `${BASE_URL}/api/attendance/`,
 };
 
 const CHART_COLORS = [

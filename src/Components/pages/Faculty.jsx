@@ -22,7 +22,7 @@ import {
 
 import "./Faculty.css";
 
-const API_URL = "http://localhost:8000/api/faculty/";
+const API_URL = "https://django-backend-6-xahr.onrender.com/api/faculty/";
 
 const INITIAL_FORM = {
   name: "",

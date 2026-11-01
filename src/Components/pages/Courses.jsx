@@ -27,7 +27,7 @@ import {
 
 import "./Courses.css";
 
-const API = "http://localhost:8000/api";
+const API = "https://django-backend-6-xahr.onrender.com/api";
 
 const emptyCourse = {
   name: "",

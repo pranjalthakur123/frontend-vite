@@ -21,10 +21,11 @@ import {
 } from "react-bootstrap-icons";
 import "./Fees.css";
 
-const STUDENTS_API = "http://localhost:8000/api/students/";
-const ACCOUNTS_API = "http://localhost:8000/api/fees/accounts/";
-const PAYMENTS_API = "http://localhost:8000/api/fees/payments/";
+const BASE_URL = "https://django-backend-6-xahr.onrender.com";
 
+const STUDENTS_API = `${BASE_URL}/api/students/`;
+const ACCOUNTS_API = `${BASE_URL}/api/fees/accounts/`;
+const PAYMENTS_API = `${BASE_URL}/api/fees/payments/`;
 const COURSE_FEES = {
   "Full Stack Development": 18000,
   "Python Programming": 12000,

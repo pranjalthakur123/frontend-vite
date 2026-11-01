@@ -23,9 +23,11 @@ import {
   ClockHistory,
   ClipboardData,
 } from "react-bootstrap-icons";
-const STUDENTS_API = "http://localhost:8000/api/students/";
-const ATTENDANCE_API = "http://localhost:8000/api/attendance/";
-const IMPORT_EXCEL_API = "http://localhost:8000/api/import-excel/";
+const BASE_URL = "https://django-backend-6-xahr.onrender.com";
+
+const STUDENTS_API = `${BASE_URL}/api/students/`;
+const ATTENDANCE_API = `${BASE_URL}/api/attendance/`;
+const IMPORT_EXCEL_API = `${BASE_URL}/api/import-excel/`;
 
 const apiFetch = (url, options = {}) =>
   fetch(url, {

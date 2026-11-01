@@ -20,7 +20,8 @@ import {
   CurrencyRupee,
 } from "react-bootstrap-icons";
 
-const API_URL = "http://localhost:8000/api/fees/pending-report/";
+const API_URL = "https://django-backend-6-xahr.onrender.com/api/fees/pending-report/";
+
 
 function formatCurrency(amount) {
   return new Intl.NumberFormat("en-IN", {

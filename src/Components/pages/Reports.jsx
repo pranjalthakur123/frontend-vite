@@ -10,7 +10,7 @@ import {
 } from "react-bootstrap-icons";
 import "./Reports.css";
 
-const API = "http://localhost:8000/api";
+const API = "https://django-backend-6-xahr.onrender.com/api";
 
 const getList = (data) => {
   if (Array.isArray(data)) return data;

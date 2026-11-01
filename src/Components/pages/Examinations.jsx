@@ -21,7 +21,7 @@ import {
   Trash,
 } from "react-bootstrap-icons";
 
-const API_URL = "http://localhost:8000/api/examinations/";
+const API_URL = "https://django-backend-6-xahr.onrender.com/api/examinations/";
 
 const EMPTY_FORM = {
   name: "",

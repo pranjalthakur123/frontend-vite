@@ -19,7 +19,7 @@ import {
   PlusCircle,
   Trash,
 } from "react-bootstrap-icons";
-const API_BASE = "http://localhost:8000/api";
+const API_BASE = "https://django-backend-6-xahr.onrender.com/api";
 const API_URL = `${API_BASE}/timetable/`;
 const STUDENTS_API = `${API_BASE}/students/`;
 const CSRF_URL = `${API_BASE}/auth/csrf/`;

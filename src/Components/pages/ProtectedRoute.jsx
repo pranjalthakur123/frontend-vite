@@ -6,10 +6,10 @@ const ProtectedRoute = () => {
   const [authenticated, setAuthenticated] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/auth/check/", {
-      method: "GET",
-      credentials: "include",
-    })
+   fetch("https://django-backend-6-xahr.onrender.com/api/auth/check/", {
+  method: "GET",
+  credentials: "include",
+})
       .then((response) => {
         if (!response.ok) {
           setAuthenticated(false);

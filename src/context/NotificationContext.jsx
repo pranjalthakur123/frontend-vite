@@ -9,10 +9,12 @@ import {
 
 const NotificationContext = createContext(null);
 
+const BASE_URL = "https://django-backend-6-xahr.onrender.com";
+
 const API = {
-  students: "http://localhost:8000/api/students/",
-  accounts: "http://localhost:8000/api/fees/accounts/",
-  attendance: "http://localhost:8000/api/attendance/",
+  students: `${BASE_URL}/api/students/`,
+  accounts: `${BASE_URL}/api/fees/accounts/`,
+  attendance: `${BASE_URL}/api/attendance/`,
 };
 
 const getList = (data) =>
